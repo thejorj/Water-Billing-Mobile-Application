@@ -25,7 +25,7 @@ import com.example.waterbilling.data.ExcelRow
 import com.example.waterbilling.data.DataManager
 import com.example.waterbilling.data.DataSummary
 import com.example.waterbilling.ui.ExcelGrid
-import com.example.waterbilling.ui.theme.WaterbillingTheme
+import com.example.waterbilling.ui.theme.DaloyTheme
 import com.example.waterbilling.utils.ExcelUtils
 import androidx.core.content.ContextCompat
 import android.content.pm.PackageManager
@@ -74,7 +74,7 @@ class MainActivity : ComponentActivity() {
         dataManager = DataManager(this)
         enableEdgeToEdge()
         setContent {
-            WaterbillingTheme {
+            DaloyTheme {
                 MainScreen(dataManager)
             }
         }
@@ -625,7 +625,7 @@ fun MainScreen(dataManager: DataManager) {
             TopAppBar(
                 title = {
                     Text(
-                        "Water Billing",
+                        "DALOY",
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )

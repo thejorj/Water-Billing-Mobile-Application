@@ -94,7 +94,7 @@ class DataManager(private val context: Context) {
         val autoSaveFile = java.io.File(downloadsDir, autoSaveFileName)
         
         try {
-            val uri = android.net.Uri.fromFi    le(autoSaveFile)
+            val uri = android.net.Uri.fromFile(autoSaveFile)
             ExcelUtils.exportExcel(context, uri, currentData)
             
             // Show notification about successful auto-save
