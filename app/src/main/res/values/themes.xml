@@ -2,11 +2,4 @@
 <resources>
 
     <style name="Theme.Daloy" parent="android:Theme.Material.Light.NoActionBar" />
-    
-    <style name="Theme.Daloy.Splash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/white</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
-        <item name="windowSplashScreenAnimationDuration">1000</item>
-        <item name="postSplashScreenTheme">@style/Theme.Daloy</item>
-    </style>
 </resources>
